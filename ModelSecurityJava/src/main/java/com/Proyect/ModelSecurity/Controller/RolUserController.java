@@ -42,7 +42,7 @@ public class RolUserController {
         return ResponseEntity.ok(rolUserService.findByRolId(rolId));
     }
 
-    // ✅ Asignar un rol usando DTO y JSON
+    // ✅ Asignar un rol 
     @PostMapping("/assign")
     public ResponseEntity<String> assignRolToUser(@RequestBody AssignRolRequest request) {
         Users user = new Users();
